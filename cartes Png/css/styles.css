@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(207,207,207);
+    font-family: 'Poppins', sans-serif;
+}
+.cartes{
+    width: 300px;
+    height: 530px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    margin: 60px 60px;
+}
+.deg{
+    height: 50%;
+    background: rgb(242,108,108);
+    /* permet d'avoir un font choisi si le navigateur n'arrive pas à lire le linear-gradient */
+    background: linear-gradient(45deg, #fa3939, rgb(240,156,156));
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.cartes:nth-child(1) .deg img{
+    width: 450px;
+    position: absolute;
+    top: -100px;
+    left: -50px;
+}
+.cartes:nth-child(2) .deg img{
+    width: 400px;
+    position: absolute;
+    top: -90px;
+    left: -50px;
+}
+.cartes:nth-child(2) .deg{
+    background: linear-gradient(45deg, #f09797, #fa3939);
+}
+.cartes:nth-child(3) .deg img{
+    width: 350px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.titre{
+    height: 5%;
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+}
+.info{
+    text-align: justify;
+    height: 30%;
+    padding: 10px 30px 0px 30px;
+    line-height: 18px;
+    font-size: 15px;
+}
+.btnBox{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+.btn:hover{
+    transition: all 0.2s ease;
+    background: #333;
+    color: #f1f1f1;
+}
